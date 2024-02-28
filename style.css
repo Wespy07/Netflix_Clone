@@ -1,45 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: black;
-}
-.hero{
-    z-index: 4;
-    width: 80vw;
-    height: 50px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: yellow; */
-}
-.hero img{
-    z-index: 4;
-    width: 20vw;
-}
-.btn{
-    z-index: 4;
-}
-.mainbg img{
-    width: 100vw;
-    position: absolute;
-    top: 0;
+
+.main {
+    background-image: url(/assets/images/mainbg1.jpg);
+    height: 80vh;
+    position: relative;
+    /* background-size: 100vw; */
+    background-size: max(1550px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-header .mainbl{
-    top: 0;
-    width: 100vw;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.39);
-    z-index: 3;
+.main .box{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.59;
     position: absolute;
+    top: 0;
 }
-.btn button:nth-child(1){
-    background-color: rgba(22, 22, 22, 0.1);
+nav{
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+}
+nav img{
+    width: 184px;
+    position: relative;
+    z-index: 3;    
+}
+/* nav img:hover{
+    cursor: pointer;    
+} */
+nav button{
+    position: relative;
+    z-index: 3;
+}
+
+nav .btn{
+    background-color: rgba(255, 255, 255, 0);
     color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 5px 10px;
+    margin: 0 5px;
+    padding: 7px 25px;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 4px;
+}
+nav .btn-red{
+    background-color: #d81f26;
+}
+nav .btn-red:hover{
+    cursor: pointer;
 }
