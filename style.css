@@ -1,11 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Martel Sans", sans-serif;
+}
+
+body {
+    background-color: black;
 }
 
 .main {
-    background-image: url(/assets/images/mainbg1.jpg);
-    height: 80vh;
+    background-image: url(assets/images/mainbg1.jpg);
+    height: 90vh;
     position: relative;
     /* background-size: 100vw; */
     background-size: max(1550px, 100vw);
@@ -13,36 +18,39 @@
     background-repeat: no-repeat;
 }
 
-.main .box{
-    height: 80vh;
+.main .box {
+    height: 90vh;
     width: 100%;
     background-color: black;
-    opacity: 0.59;
+    opacity: 0.65;
     position: absolute;
     top: 0;
 }
-nav{
+
+nav {
     display: flex;
     max-width: 80vw;
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    height: 84px;
+    height: 15vh;
 }
-nav img{
+
+nav img {
     width: 184px;
-    position: relative;
-    z-index: 3;    
-}
-/* nav img:hover{
-    cursor: pointer;    
-} */
-nav button{
     position: relative;
     z-index: 3;
 }
 
-nav .btn{
+/* nav img:hover{
+    cursor: pointer;    
+} */
+nav button {
+    position: relative;
+    z-index: 3;
+}
+
+.btn {
     background-color: rgba(255, 255, 255, 0);
     color: white;
     margin: 0 5px;
@@ -50,9 +58,62 @@ nav .btn{
     border: 1px solid rgb(112, 112, 112);
     border-radius: 4px;
 }
-nav .btn-red{
-    background-color: #d81f26;
+
+.btn-red {
+    background-color: #e50914;
+    font-weight: 700;
 }
-nav .btn-red:hover{
+
+nav .btn-red:hover {
     cursor: pointer;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 62vw;
+    height: 60vh;
+    color: white;
+    z-index: 5;
+}
+.cont h2{
+    font-weight: 900;
+    font-size: 48px;
+}
+.cont h4{
+    font-weight: 400;
+    font-size: 24px;
+}
+.herotbns{
+    margin-top: 1%;
+}
+.herotbns button{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.herotbns input{
+    font-size: 24px;
+    font-weight: 500;
+}
+.herotbns input::placeholder{
+    font-size: 24px;
+    color: white;
+}
+.sg{
+    padding-top: 2px;
+}
+.separation{
+    height: 10px;
+    width: 100%;
+    background-color: #232323;
 }
