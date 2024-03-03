@@ -68,52 +68,161 @@ nav .btn-red:hover {
     cursor: pointer;
 }
 
-.hero{
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1%;
+    padding: 30px;
 }
+
 .cont {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    width: 62vw;
+    width: 69vw;
     height: 60vh;
     color: white;
     z-index: 5;
 }
-.cont h2{
+
+.cont h2 {
     font-weight: 900;
     font-size: 48px;
+    padding: 10px;
 }
-.cont h4{
+
+.cont h4 {
     font-weight: 400;
     font-size: 24px;
 }
-.herotbns{
+
+.herotbns {
     margin-top: 1%;
 }
-.herotbns button{
+
+.herotbns button {
     margin-top: 10px;
     font-size: 24px;
     font-weight: 600;
 }
-.herotbns input{
+
+.herotbns input {
     font-size: 24px;
     font-weight: 500;
 }
-.herotbns input::placeholder{
+
+.herotbns input::placeholder {
     font-size: 24px;
     color: white;
 }
-.sg{
+
+.sg {
     padding-top: 2px;
 }
-.separation{
+
+.separation {
     height: 10px;
     width: 100%;
     background-color: #232323;
+}
+
+.sec1 {
+    width: 84vw;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1ct {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.sec1 .sec2ct {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sec1img {
+    position: relative;
+}
+
+.sec1img img {
+    position: relative;
+    z-index: 3;
+}
+
+.sec1img video {
+    position: absolute;
+    top: 96px;
+    left: 83px;
+}
+
+.third .sec1img video {
+    width: 390px;
+    left: 120px;
+    top: 55px;
+}
+
+.second .sec1img .sec2im {
+    position: absolute;
+    width: 400px;
+    height: 96px;
+    border: 2px solid #575757;
+    left: 122px;
+    top: 333px;
+    z-index: 5;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+}
+
+.stgr img {
+    height: 80px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.sec2con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5px;
+}
+
+.sec2con>div:nth-child(2) {
+    color: #006de4;
+}
+
+.dnld {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dnld img {
+    width: 70px;
+}
+
+.sec2con {
+    margin: 32px 0 30px 0;
+}
+.faqs{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.faqs .q1{
+    width: 75vw;
+    height: 84px;
+    background-color: #2d2d2d;
+    /* margin-bottom: 12px; */
 }
