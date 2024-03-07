@@ -337,3 +337,7 @@ nav .btn-red:hover {
 .lbn {
     margin-top: 35px;
 }
+
+@media screen and (max-width: 1200px) {
+    
+}
