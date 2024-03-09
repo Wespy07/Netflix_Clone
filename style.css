@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Martel Sans", sans-serif;
+    overflow-x: hidden;
 }
 
 body {
@@ -179,22 +180,26 @@ nav .btn-red:hover {
     top: 55px;
 }
 
+.sec1 .first .sec1img img{
+    width: 300px;
+}
+
 .second .sec1img .sec2im {
     position: absolute;
-    width: 400px;
-    height: 96px;
+    width: 340px;
+    height: 97px;
     border: 2px solid #575757;
-    left: 122px;
-    top: 333px;
+    left: 148px;
+    top: 337px;
     z-index: 5;
     border-radius: 10px;
     background-color: black;
-    display: flex;
+    display: flex;  
 }
 
 .stgr img {
-    height: 80px;
-    padding: 8px;
+    height: 70px;
+    padding: 15px 10px 0 10px;
     border-radius: 10px;
 }
 
@@ -204,6 +209,7 @@ nav .btn-red:hover {
     align-items: center;
     flex-direction: column;
     padding: 0 5px;
+    font-size: 10px;
 }
 
 .sec2con>div:nth-child(2) {
@@ -290,7 +296,7 @@ nav .btn-red:hover {
 .ftr .ftr1 {
     padding: 10px;
     width: 70vw;
-    height: 40vh;
+    /* height: 52vh; */
     /* border: 2px solid white; */
     margin: auto;
     color: rgba(255, 255, 255, 0.7);
@@ -316,7 +322,7 @@ nav .btn-red:hover {
 .tbs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 2px;
+    color: white;
 }
 
 .lbn .btn {
@@ -338,6 +344,118 @@ nav .btn-red:hover {
     margin-top: 35px;
 }
 
-@media screen and (max-width: 1200px) {
-    
+@media screen and (max-width: 1450px) {
+    nav {
+        max-width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav img {
+        width: 90px;
+    }
+
+    .btn {
+        font-size: 7px;
+    }
+
+    .hero .cont h2 {
+        font-size: 23px;
+    }
+
+    .hero .cont h4 {
+        font-size: 15px;
+        padding: 4px 0;
+        line-height: 22px;
+    }
+
+    .herotbns {
+        margin-top: 20px;
+    }
+
+    .herotbns input {
+        font-size: 18px;
+        font-weight: 100;
+        padding: 5px;
+    }
+
+    .herotbns input::placeholder {
+        font-size: 12px;
+        padding: 22px 5px;
+    }
+
+    .herotbns .btn-red {
+        font-size: 18px;
+        padding: 1px 10px;
+    }
+
+    .sec1 {
+        flex-wrap: wrap;
+        padding: 42px;
+    }
+
+    .sec1ct {
+        font-size: 23px;
+    }
+
+    /* .sec2ct{
+        font-size: 15px;
+    } */
+    .sec1img img {
+        width: 300px;
+    }
+
+    .sec1img video {
+        width: 221px;
+        top: 46px;
+        left: 41px;
+    }
+
+    .third .sec1img video {
+        width: 190px;
+        left: 58px;
+        top: 18px;
+    }
+
+    .faqs {
+        padding: 30px;
+    }
+
+    .fq {
+        text-align: center;
+    }
+
+    .q1 {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .q1 svg {
+        width: 25px;
+        padding: 0 10px;
+    }
+
+    .watch2 {
+        width: 83vw;
+    }
+
+    .watch2 .w2c {
+        font-size: 15px;
+    }
+
+    .tbs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    .second .sec1img .sec2im {
+        display: none;
+    }
 }
+
+/* @media screen and (max-width: 1650px) {
+    .second .sec1img .sec2im {
+        display: none;
+    }
+} */
