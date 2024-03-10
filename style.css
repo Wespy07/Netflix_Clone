@@ -23,7 +23,7 @@ body {
     height: 90vh;
     width: 100%;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.77;
     position: absolute;
     top: 0;
 }
@@ -161,6 +161,11 @@ nav .btn-red:hover {
 
 .sec1img {
     position: relative;
+    /* width: 80%;
+    max-width: 84vw; */
+}
+.fourth .sec1img img{
+    width: 100%;
 }
 
 .sec1img img {
@@ -175,12 +180,12 @@ nav .btn-red:hover {
 }
 
 .third .sec1img video {
-    width: 390px;
+    width: 400px;
     left: 120px;
-    top: 55px;
+    top: 47px;
 }
 
-.sec1 .first .sec1img img{
+.sec1 .first .sec1img img {
     width: 300px;
 }
 
@@ -194,7 +199,7 @@ nav .btn-red:hover {
     z-index: 5;
     border-radius: 10px;
     background-color: black;
-    display: flex;  
+    display: flex;
 }
 
 .stgr img {
@@ -260,6 +265,7 @@ nav .btn-red:hover {
 }
 
 .q1:hover {
+    transition: all 0.5s ease-out;
     background-color: rgb(58, 58, 58);
     cursor: pointer;
 }
@@ -323,6 +329,9 @@ nav .btn-red:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
+}
+.tbs a:hover{
+    text-decoration: none;
 }
 
 .lbn .btn {
@@ -399,9 +408,9 @@ nav .btn-red:hover {
         font-size: 23px;
     }
 
-    /* .sec2ct{
+    .sec1 .sec2ct{
         font-size: 15px;
-    } */
+    }
     .sec1img img {
         width: 300px;
     }
@@ -449,6 +458,7 @@ nav .btn-red:hover {
         grid-template-columns: 1fr 1fr;
         gap: 25px;
     }
+
     .second .sec1img .sec2im {
         display: none;
     }
